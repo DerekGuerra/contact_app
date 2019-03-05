@@ -1,0 +1,1 @@
+json.message 'Contact successfully deleted!'

@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   namespace :api do 
     get '/contact' => 'contacts#index'
     get '/contact/:id' => 'contacts#show'
-    post '/contacts' => 'contacts#create'
-    patch '/contacts/:id' => 'contacts#update'
+    post '/contact' => 'contacts#create'
+    patch '/contact/:id' => 'contacts#update'
+    delete '/contact/:id' => 'contacts#destroy'
   end
 end
