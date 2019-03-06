@@ -6,8 +6,7 @@ json.phone_number @contact.phone_number
 json.created_at @contact.created_at
 
 json.formatted do
-json.full_name @contact.full_name
-json.created_at @contact.friendly_created_at
-json.japan_phone_number @contact.japan_prefix
-  
+  json.full_name @contact.full_name
+  json.created_at @contact.friendly_created_at
+  json.japan_phone_number @contact.japan_prefix  
 end

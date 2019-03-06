@@ -1,7 +1,3 @@
-json.arraay! @contacts.each do |contact|
-  json.id contact.id
-  json.first_name contact.first_name
-  json.last_name contact.last_name
-  json.email contact.email
-  json.phone_number contact.japan_prefix
-end         
+json.array! @contacts.each do |contact|
+  json.partial! 'contact.json.jbuilder', the_contact: contact
+end
