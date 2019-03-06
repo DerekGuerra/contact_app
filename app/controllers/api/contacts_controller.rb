@@ -38,3 +38,4 @@ class Api::ContactsController < ApplicationController
     render 'destroy.json.jbuilder'
   end
 end 
+ 
