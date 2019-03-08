@@ -1,1 +1,1 @@
-json.error @contact.errors
+json.error @contact.errors.full_messages
