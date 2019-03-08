@@ -11,4 +11,7 @@ class Contact < ApplicationRecord
   def japan_prefix
     "+81-" + phone_number
   end
+
+  validates :first_name, :last_name, presence: true
+  validates :email, uniqueness: true
 end
